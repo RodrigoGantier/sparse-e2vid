@@ -174,4 +174,20 @@ sparse_e2vid/
 
 ## Citation
 
-If you use this code, please cite the original work.
+If you use this code in your research, please cite our paper:
+
+> **Sparse-E2VID: A Sparse Convolutional Model for Event-Based Video Reconstruction Trained with Real Event Noise**  
+> Pablo Rodrigo Gantier Cadena, Yeqiang Qian, Chunxiang Wang, Ming Yang  
+> *CVPRW 2023*
+
+**BibTeX:**
+```bibtex
+@article{Cadena2023SparseE2VIDAS,
+  title={Sparse-E2VID: A Sparse Convolutional Model for Event-Based Video Reconstruction Trained with Real Event Noise},
+  author={Pablo Rodrigo Gantier Cadena and Yeqiang Qian and Chunxiang Wang and Ming Yang},
+  journal={2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
+  year={2023},
+  pages={4150-4158},
+  url={https://api.semanticscholar.org/CorpusID:260918367}
+}
+```
