@@ -20,7 +20,19 @@ checkpoints/last_0150.pth
 ## Datasets
 
 ### Test data
-The test datasets (e.g. `bike_bay_hdr.h5`, `boxes.h5`, etc.) should be placed in:
+The test datasets (e.g. `bike_bay_hdr.h5`, `boxes.h5`, etc.) are available via Baidu Netdisk:
+
+- **Link:** https://pan.baidu.com/s/1Woi7IAmCW4oIr8hjZyaUNQ
+- **Extraction code:** `rttu`
+- **File:** `data.zip`
+
+After downloading, extract the archive so the `.h5` files are placed in the `data/` folder:
+
+```bash
+unzip data.zip -d .
+```
+
+Expected structure:
 ```
 data/
 ├── bike_bay_hdr.h5
