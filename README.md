@@ -2,6 +2,12 @@
 
 Event-based video reconstruction using sparse convolutions.
 
+**Paper:** [Sparse-E2VID: A Sparse Convolutional Model for Event-Based Video Reconstruction](https://openaccess.thecvf.com/content/CVPR2023W/EventVision/papers/Cadena_Sparse-E2VID_A_Sparse_Convolutional_Model_for_Event-Based_Video_Reconstruction_Trained_CVPRW_2023_paper.pdf) (CVPRW 2023)
+
+**Video:**
+
+[![Sparse-E2VID Video](https://img.youtube.com/vi/sFH9zp6kuWE/0.jpg)](https://www.youtube.com/watch?v=sFH9zp6kuWE)
+
 ## Setup
 
 1. Install dependencies:
@@ -56,8 +62,9 @@ After downloading, extract the archive and place the `.h5` files as follows:
 tar -xf tr_data_full.tar.xz
 mkdir -p data/train data/noise
 mv tr_data_full/*.h5 data/train/
-# Place noise calibration .h5 files in data/noise/
 ```
+
+> **Note:** Noise calibration files are already included in this repository under `noise_data/` for convenience. They are also bundled inside `tr_data_full.tar.xz`.
 
 Expected structure:
 ```
@@ -66,7 +73,7 @@ data/
 │   ├── 000000000_out.h5
 │   ├── 000000001_out.h5
 │   └── ...
-├── noise/          # Noise calibration data (.h5 files)
+├── noise/          # Noise calibration data (or use noise_data/ in repo root)
 │   ├── noise1.h5
 │   └── ...
 └── bike_bay_hdr.h5   # Test files (kept in data/ root for convenience)
@@ -135,6 +142,9 @@ sparse_e2vid/
 │   └── *.h5              # Test datasets
 ├── models/               # Model definitions
 │   └── small_e2v3_SubMsparse5.py
+├── noise_data/           # Noise calibration files (included in repo)
+│   ├── noise1.h5
+│   └── ...
 ├── tools/                # Utilities (metrics, timers, losses)
 │   ├── metrics.py
 │   ├── timers.py

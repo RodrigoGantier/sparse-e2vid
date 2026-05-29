@@ -26,7 +26,6 @@ wheels/
 
 # Data files (local only, too large for GitHub)
 data/*.h5
-noise_data/
 *.hdf5
 *.bag
 
